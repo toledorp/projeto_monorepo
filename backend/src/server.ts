@@ -1,8 +1,8 @@
-import express, { Express, Request, Response } from "express";
+import express, { application, Express, Request, Response } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { sequelize } from './config/database';
-import { User } from "./modesl/User";
+import { appRoutes } from "./routes";
 
 dotenv.config();
 
@@ -22,6 +22,8 @@ app.get("/api/health",  (req: Request, res: Response) => {
     });
 });
 
+// Registrar todas as rotas da aplicação sob o prefico / api
+app.use('/api', appRoutes);
 
 async function main() {
     try {
