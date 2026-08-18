@@ -1,0 +1,15 @@
+### Healt check
+Get http://localhost:3000/api/health
+
+###Listar Usuarios
+GET http://localhost:3000/api/users
+
+###criar usuarios
+POST http://lovalhost:3000/api/Users
+Content-Type: application/json
+
+{
+    "nome": "Mariana Souza",
+    "email": "mariana@email.com",
+    "senha_hash": "senhaForte123"
+}
