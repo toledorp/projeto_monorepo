@@ -1,0 +1,14 @@
+{
+    "name": "projeto-monorepo-iec",
+    "version": "1.0.0",
+    "private": true,
+
+    "scripts": {
+        "docker:build-api": "docker build -t api-service ./backend",
+        "docker:build-app": "docker build -t app-service ./app",
+        "compose:up": "docker compose up -d",
+        "compose:dow": "docker compose dow",
+        "compose:logs": "docker compose logs -f"
+    }
+
+}
