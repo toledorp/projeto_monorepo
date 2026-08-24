@@ -5,9 +5,9 @@ export class User extends Model {
     public id!: number;
     public nome!: string;
     public email!: string;
-    public sennha_hash!: string;
-    public readonly createAt!: Date;
-    public readonly UpdateAt!: Date;
+    public senha_hash!: string;
+    public readonly createdAt!: Date;
+    public readonly UpdatedAt!: Date;
 }
 
 User.init(

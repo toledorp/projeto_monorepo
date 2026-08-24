@@ -5,7 +5,7 @@ Get http://localhost:3000/api/health
 GET http://localhost:3000/api/users
 
 ###criar usuarios
-POST http://lovalhost:3000/api/Users
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
@@ -13,3 +13,18 @@ Content-Type: application/json
     "email": "mariana@email.com",
     "senha_hash": "senhaForte123"
 }
+
+### Buscar Usuarios por ID
+GET http://localhost:3000/api/users/1
+
+### Atualizar usuario
+PUT http://localhost:3000/api/users/1
+Content-Type: application/json
+{
+    "nome": "Mariana Souza Silva",
+    "email": "mariana.silva@email.com"
+}
+
+### Excluir Usuario
+DELETE http://localhost:3000/api/users/1
+
