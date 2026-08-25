@@ -3,8 +3,7 @@ import { userRoutes } from "./userRoutes";
 
 const router = Router();
 
-//Registrar as rotas de usuários sob prefuxo / users
+// Registra as rotas de usuários sob o prefixo /users
 router.use('/users', userRoutes);
 
-export { router as appRoutes};
-
+export { router as appRoutes };

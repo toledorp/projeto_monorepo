@@ -2,7 +2,7 @@ services:
   db:
     image: postgres:15-alpine
     container_name: pg-dev-2
-    environment: 
+    environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
@@ -16,7 +16,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: api-service
-    ports: 
+    ports:
       - "3000:3000"
     environment:
       - PORT=3000
@@ -29,6 +29,6 @@ services:
       - DB_SSL=false
     depends_on:
       - db
-  
+
 volumes:
   pgdata:
