@@ -20,6 +20,7 @@ GET http://localhost:3000/api/users/1
 ### Atualizar usuario
 PUT http://localhost:3000/api/users/1
 Content-Type: application/json
+
 {
     "nome": "Mariana Souza Silva",
     "email": "mariana.silva@email.com"
