@@ -42,7 +42,7 @@ export class UserController {
         try {
             const { nome, email, senha_hash } = req.body;
 
-            if (!nome || typeof nom !== 'string' || nome.trim() === '') {
+            if (!nome || typeof nome !== 'string' || nome.trim() === '') {
                 return res.status(400).json({ erro: 'O campo nome é obrigatorio.' });
             }
 
@@ -93,7 +93,8 @@ export class UserController {
 
             if (!user) {
                 return res.status(404).json({ erro: 'Usuário não encontrado.' });
-            } {
+            } 
+            {
 
                 if (nome !== undefined) {
                     if (typeof nome !== 'string' || nome.trim() === '') {
