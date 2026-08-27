@@ -29,6 +29,6 @@ jobs:
             - name: 3. Configurar o Node.js 24 com Cache de Dependencia
               uses: actions/setup-node@v4
               with:
-                node-version: 24fic CI inicial
+                node-version: 24
             
 
