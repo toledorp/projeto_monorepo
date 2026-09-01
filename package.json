@@ -8,5 +8,13 @@
         "compose:up": "docker compose up -d",
         "compose:down": "docker compose down",
         "compose:logs": "docker compose logs -f"
+    },
+    "dependencies": {
+        "bcryptjs": "^3.0.3",
+        "jsonwebtoken": "^9.0.3"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^3.0.0",
+        "@types/jsonwebtoken": "^9.0.10"
     }
 }
