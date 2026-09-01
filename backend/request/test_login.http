@@ -1,0 +1,9 @@
+### testar login e geraçao do JWT
+
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "mariana.souza@email.com",
+    "password": "123456"
+}

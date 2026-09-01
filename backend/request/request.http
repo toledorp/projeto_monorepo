@@ -10,8 +10,8 @@ Content-Type: application/json
 
 {
     "nome": "Mariana Souza",
-    "email": "mariana@email.com",
-    "senha_hash": "senhaForte123"
+    "email": "mariana.souza@email.com",
+    "password": "123456"
 }
 
 ### Buscar Usuarios por ID
